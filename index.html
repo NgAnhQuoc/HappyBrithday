@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 20th Birthday Kim Hảo 🎂</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container"></div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content" data-aos="zoom-in">
+            <div class="birthday-date" data-aos="fade-down" data-aos-delay="500">18.03</div>
+            <h1 class="title">Happy 20th Birthday Kim Hảo 🎂</h1>
+            <p class="subtitle">Chúc mừng sinh nhật tuổi 20 của cô gái xinh đẹp nhất.</p>
+            <button id="start-btn" class="btn">Bắt đầu bất ngờ ✨</button>
+        </div>
+    </section>
+
+    <!-- Gallery Section (3D Circular Carousel) -->
+    <section id="gallery" class="gallery">
+        <h2 class="section-title" data-aos="fade-up">Khoảnh Khắc Đẹp</h2>
+        <div class="carousel-container">
+            <div class="carousel" id="image-carousel">
+                <div class="carousel-item" style="--i:1;">
+                    <img src="img/img1.jpg" alt="Kim Hảo" onclick="openLightbox(this.src)" draggable="false">
+                </div>
+                <div class="carousel-item" style="--i:2;">
+                    <img src="img/img2.jpg" alt="Kim Hảo" onclick="openLightbox(this.src)" draggable="false">
+                </div>
+                <div class="carousel-item" style="--i:3;">
+                    <img src="img/img3.jpg" alt="Kim Hảo" onclick="openLightbox(this.src)" draggable="false">
+                </div>
+                <div class="carousel-item" style="--i:4;">
+                    <img src="img/im4.jpg" alt="Kim Hảo" onclick="openLightbox(this.src)" draggable="false">
+                </div>
+                <!-- You can add more items here, just update --i and total items count in script -->
+            </div>
+        </div>
+        <div class="carousel-controls">
+            <button id="prev" class="btn-small">←</button>
+            <button id="next" class="btn-small">→</button>
+        </div>
+    </section>
+
+    <!-- Love Message Section -->
+    <section id="message" class="message">
+        <div class="message-card" data-aos="flip-left">
+            <h2 class="dancing-font">Gửi Kim Hảo,</h2>
+            <p>
+                Chúc em tuổi 20 thật rực rỡ, luôn xinh đẹp, vui vẻ và tràn đầy hạnh phúc. <br>
+                Cảm ơn em đã xuất hiện trong cuộc đời anh và mang đến thật nhiều niềm vui. <br>
+                Hy vọng rằng mỗi ngày của em đều ngập tràn tiếng cười, ước mơ đều thành hiện thực <br>
+                và anh sẽ luôn ở bên cạnh em trong thật nhiều sinh nhật sau này.
+            </p>
+            <p class="signature">Happy Birthday công chúa của anh ❤️</p>
+        </div>
+    </section>
+
+    <!-- Memory Timeline -->
+    <section id="timeline" class="timeline">
+        <h2 class="section-title" data-aos="fade-up">Hành Trình Kỷ Niệm</h2>
+        <div class="timeline-container">
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="content">
+                    <h3>Ngày đầu gặp gỡ</h3>
+                    <p>Mọi thứ bắt đầu từ một ánh mắt...</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+            </div>
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="content">
+                    <h3>Những buổi hẹn hò</h3>
+                    <p>Những quán cafe quen thuộc và những câu chuyện không hồi kết.</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+            </div>
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="content">
+                    <h3>Cùng nhau trưởng thành</h3>
+                    <p>Chia sẻ cho nhau những vui buồn trong cuộc sống.</p>
+                    <span class="heart-icon">❤️</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Surprise Section -->
+    <!-- <section id="surprise" class="surprise">
+        <div class="surprise-content" data-aos="zoom-out">
+            <button id="gift-btn" class="btn-gift">Click để mở quà 🎁</button>
+            <div id="surprise-text" class="hidden">
+                <h2 class="love-text">Anh yêu em Kim Hảo</h2>
+            </div>
+        </div>
+    </section> -->
+
+    <footer>
+        <p>Made with ❤️ for Kim Hảo - Happy 20th Birthday</p>
+    </footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
